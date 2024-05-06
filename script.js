@@ -41,8 +41,8 @@ form.addEventListener("input",(e)=> {
     .catch(error => {
               console.error(error);
               
-              result.innerHTML= <blockquote>Couldn't retrieve temperature for ${userInput}. <br>Please provide correct information.</blockquote>;
-              result.style.background="none";
+              result.innerHTML= `<blockquote>Couldn't retrieve temperature for ${userInput}. <br>Please provide correct information.</blockquote>`;
+             
               
             });
         
