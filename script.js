@@ -9,7 +9,7 @@ form.addEventListener("input",(e)=> {
     
  if(userInput){
      const apiKey="a75dc08915f9dc1d92ac02ebeda14de7";
-     fetch(https://api.openweathermap.org/data/2.5/weather?q=${userInput}&units=metric&appid=${apiKey})
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userInput}&units=metric&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
       const temperature = data.main.temp;
