@@ -103,7 +103,7 @@ margin-top: 0px;
  100% {color:black;}
     
 }
-@media screen and (orientation: landscape) and (max-width: 668px) 
+@media screen and (orientation: landscape) and (max-width: 1000px) 
 {
     body{
         height: auto;
