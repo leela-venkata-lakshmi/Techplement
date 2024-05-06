@@ -30,9 +30,13 @@ form.addEventListener("input",(e)=> {
         <p>Wind: <b>${wind} m/s</b></p>
         <p>Humidity: <b>${humidity} %</b></p>
       </div>
+    
+    
     `;
 
+    
     result.classList.remove("hidden");
+   
     })
     .catch(error => {
               console.error(error);
