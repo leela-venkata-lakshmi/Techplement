@@ -19,12 +19,13 @@ form.addEventListener("input",(e)=> {
       
 
       const condition =data.weather[0].description;
+      const modify=condition[0].toUpperCase()+condition.slice(1);
       const image = data.weather[0].icon;
 
 
       result.innerHTML=`<div><h1>${userInput}</h1></div>
       <div id="output">
-      <p style = "text-align :center"><b>${condition}</b><img src = "https://openweathermap.org/img/wn/${image}.png
+      <p style = "text-align :center"><b>${modify}</b><img src = "https://openweathermap.org/img/wn/${image}.png
       "></p>
         <p>Temperature: <b>${temperature}°C </b></p>
         <p>Wind: <b>${wind} m/s</b></p>
