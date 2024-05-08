@@ -1,7 +1,6 @@
 const form=document.querySelector('input[type="search"]');
 const input=document.getElementById("search");
 const result=document.getElementById("result");
-const innerDiv = document.getElementById("innerDiv");
 result.classList.add("hidden");
 form.addEventListener("input",(e)=> {
     e.preventDefault();
